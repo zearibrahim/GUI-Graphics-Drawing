@@ -1,5 +1,6 @@
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -32,7 +33,8 @@ public class GUIGridLayout extends JFrame {
 		b.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Call the graphics component and draw a line
-				CGG.getGraphics().drawLine(5, 100, 400, 400);
+				//CGG.drawCustomLine(new Point(5,5), new Point(100,100)); //1
+				CGG.getGraphics().drawLine(5,5,100,100);//2
 			}
 		});
 
